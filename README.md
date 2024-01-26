@@ -1,7 +1,9 @@
 # Portifólio - Jasson Junior #
 
 ## Sobre ##
-Projeto feito com o intuito de me apresentar como Desenvolvedor Front-End
+Projeto feito com o intuito de me apresentar como Desenvolvedor Front-End.
+
+[Confira o projeto aqui!](https://jassonjr.github.io/portifolio/)
 
 ## Site composto por:
 * **Apresentação**: Onde falo quem sou;
