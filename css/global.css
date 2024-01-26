@@ -25,6 +25,11 @@ img {
     display: block;
 }
 
+.highlight {
+    color: #E8A015;
+    font-weight: bold;
+}
+
 .subtitulo {
     font-size: 8rem;
     line-height: 1;
