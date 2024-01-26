@@ -32,6 +32,15 @@
     color:#ffffff;
 }
 
+.footer-icones {
+    display: flex;
+    gap: 30px;
+}
+
+.bi {
+    font-size: 3rem;
+}
+
 .footer-copy {
     grid-column: 1 / -1;
     font-size: 1.125rem;
