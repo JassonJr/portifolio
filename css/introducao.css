@@ -2,7 +2,7 @@
     max-width: 1200px;
     padding: 40px 20px;
     margin: 0 auto;
-
+    margin-top: 155px;
     display: grid;
     grid-template-columns: 1fr 2fr;
 
@@ -63,6 +63,7 @@
 @media (max-width: 500px) {
     .introducao {
         grid-template-columns: 1fr;
+        margin-top: 170px;
     }
     .introducao img {
         display: none;

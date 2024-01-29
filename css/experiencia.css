@@ -1,6 +1,6 @@
 .experiencia {
     max-width: 1200px;
-    padding: 40px 20px;
+    padding: 120px 20px;
     margin: 0 auto;
 
     display: grid;
@@ -105,7 +105,10 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
+    .experiencia {
+        padding: 40px 20px;
+    }
     .empresa {
         grid-template-columns: 1fr;
     }
