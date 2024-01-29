@@ -17,6 +17,7 @@
 
 .header-menu {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
 
@@ -32,6 +33,13 @@
     display: block;
 }
 
+.bi-x, .bi-list {
+    display: none;
+}
+.side-icones li{
+    display: none;
+}
+
 @media (max-width: 800px) {
     .header{
         flex-direction: column;
@@ -42,5 +50,54 @@
     .header a {
         background-color: #f5f5f5;
         border-radius: 4px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .bi-x, .bi-list {
+        display: block;
+        font-size: 36px;
+    }
+    .bi-x {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #f5f5f5;
+    }
+    .side-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        transition: 0.5s;
+
+        flex-direction: column;
+        justify-content: flex-start;
+        
+        width: 0;
+        height: 100vh;
+        background-color: #141414;
+    }
+    .header a {
+        color: #818181;
+        background: initial;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .header a:hover {
+        color: #f1f1f1;
+    }
+
+    .side-icones {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+    }
+    .side-icones li{
+        display: block;
     }
 }

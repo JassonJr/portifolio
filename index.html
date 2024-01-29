@@ -19,14 +19,24 @@
 </head>
 <body>
     <header class="header">
-        <img src="./img/marca.svg" alt="Jasson Junior">
+        <a href="./index.html">
+            <img src="./img/marca.svg" alt="Jasson Junior">
+        </a>
         <nav>
-            <ul class="header-menu" id="header-menu">
-                <li><a href="#experiencia">Experiência</a></li>
-                <li><a href="#formacao">Formação</a></li>
-                <li><a href="#contato">Contato</a></li>
+            <ul class="header-menu side-bar" id="header-menu">
+                <li><i class="bi bi-x" id="close-button"></i></li>
+                <li><a href="#experiencia" id="experiencia-button">Experiência</a></li>
+                <li><a href="#formacao" id="formacao-button">Formação</a></li>
+                <li><a href="#contato" id="contato-button">Contato</a></li>
+                <div class="side-icones" id="side-icones">
+                    <!-- https://github.com/JassonJr -->
+                    <li><a href="https://github.com/JassonJr"><i class="bi bi-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/jasson-jr-sa/"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="https://wa.me/5511977328111?text=Olá%20Jasson,%20estou %20entrando%20em%20contato%20com%20você%20através%20do%20seu%20portifólio!"><i class="bi bi-whatsapp"></i></a></li>
+                </div>
             </ul>
         </nav>
+        <i class="bi bi-list" id="menu-button"></i>
     </header>
 
     <main class="introducao">
@@ -157,5 +167,34 @@
             <p class="footer-copy">Desenvolvido por Jasson Junior. Alguns direitos reservados.</p>
         </div>
     </footer>
+
+    <script>
+        document.querySelector('#menu-button').addEventListener('click', e => {
+            openNav()
+        })
+        
+        document.querySelector('#close-button').addEventListener('click', e => {
+            closeNav()
+        })
+        document.querySelector('#experiencia-button').addEventListener('click', e => {
+            closeNav()
+        })
+        document.querySelector('#formacao-button').addEventListener('click', e => {
+            closeNav()
+        })
+        document.querySelector('#contato-button').addEventListener('click', e => {
+            closeNav()
+        })
+
+        function openNav() {
+            document.getElementById("header-menu").style.width = "250px";
+            document.getElementById("header-menu").style.padding = "80px 20px";
+        }
+        
+        function closeNav() {
+            document.getElementById("header-menu").style.width = "0";
+            document.getElementById("header-menu").style.padding = "0";
+        }
+    </script>
 </body>
 </html>
