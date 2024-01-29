@@ -23,7 +23,12 @@
             <img src="./img/marca.svg" alt="Jasson Junior">
         </a>
         <nav>
-            <ul class="header-menu side-bar" id="header-menu">
+            <ul class="header-menu">
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <ul class="sidebar" id="sidebar">
                 <li><i class="bi bi-x" id="close-button"></i></li>
                 <li><a href="#experiencia" id="experiencia-button">Experiência</a></li>
                 <li><a href="#formacao" id="formacao-button">Formação</a></li>
@@ -187,13 +192,13 @@
         })
 
         function openNav() {
-            document.getElementById("header-menu").style.width = "250px";
-            document.getElementById("header-menu").style.padding = "80px 20px";
+            document.getElementById("sidebar").style.width = "250px";
+            document.getElementById("sidebar").style.padding = "80px 20px";
         }
         
         function closeNav() {
-            document.getElementById("header-menu").style.width = "0";
-            document.getElementById("header-menu").style.padding = "0";
+            document.getElementById("sidebar").style.width = "0";
+            document.getElementById("sidebar").style.padding = "0";
         }
     </script>
 </body>
